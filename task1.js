@@ -25,13 +25,12 @@ for (let i = 0; i < obj.length; i++){
     console.log(obj[i].age);
 }
 
-// we can compare two javaScript object
+// we can compare two javaScript object values
 
-let obj1 = {name:"Person1",age:5};
-let obj2 = { age: 5, name: "Person1" };
-
-if (obj1.name === obj2.name && obj1.age==obj2.age) {
-    console.log(true);
-} else {
+    if (obj[0].name === obj[1].name && obj[0].age==obj[1].age) {
+        console.log(true);
+    } else {
     console.log(false);
 }
+
+
