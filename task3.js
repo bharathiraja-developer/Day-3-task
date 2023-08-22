@@ -8,10 +8,10 @@ xhr.onload = function () {
     let data = JSON.parse(xhr.responseText);
 
     for (let detail of data) {
-       console.log(detail.name);
-        console.log(detail.region);
-        console.log(detail.subregion);
-        console.log(detail.population);
+       console.log('country name',detail.name);
+        console.log('region : ',detail.region);
+        console.log('subregion : ',detail.subregion);
+        console.log('population : ',detail.population);
     }
 };
 
