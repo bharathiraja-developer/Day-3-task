@@ -3,7 +3,7 @@ Question : How to compare two JSON have the same properties without order ?
     a) let obj1 = {name:"Person1",age:5};
     b) let obj2 = {age:5,name:"Person1"};
 
-Answer : In javaScript object notation we can able to store multiple values without order in 'key:value' pairs by comma separated. we can access the stored value by the keys in the javaScript object.
+Answer : In javaScript object notation we can able to store multiple values with or without order in 'key:value' pairs by comma separated. we can access the stored value by the keys in the javaScript object.
 
 
 */
