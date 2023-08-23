@@ -5,32 +5,28 @@ Question : How to compare two JSON have the same properties without order ?
 
 Answer : In javaScript object notation we can able to store multiple values with or without order in 'key:value' pairs by comma separated. we can access the stored value by the keys in the javaScript object.
 
-
 */
 // for example 
-let obj = [{ name: "Person1", age: 5 },
-{ age: 5, name: "Person1" }]
+let obj1 = { name: "Person1", age: 5 };
+let obj2 = { age: 5, name: "Person1" };
 
-// here obj contains two javaScript object we can acess the name and age as follows
+let jsonObj1 = JSON.stringify(obj1);
+let jsonObj2 = JSON.stringify(obj2);
 
-console.log(obj[0].name);
-console.log(obj[0].age);
-console.log(obj[1].name);
-console.log(obj[1].age); 
-
-// we can use for loop here for th code repitation
-
-for (let i = 0; i < obj.length; i++){
-    console.log(obj[i].name);
-    console.log(obj[i].age);
+if (typeof(jsonObj1) === typeof(jsonObj2)) {
+    console.log('type of both JSON is same');
+} else {
+    console.log('type of both JSON is not same');
 }
 
-// we can compare two javaScript object values
-
-    if (obj[0].name === obj[1].name && obj[0].age==obj[1].age) {
-        console.log(true);
-    } else {
-    console.log(false);
+if (obj1.name === obj2.name) {
+    console.log('both JSON name is same');
+} else {
+    console.log('both JSON name is not same');
 }
 
-
+if (obj1.age === obj2.age) {
+    console.log('both JSON age is same');
+} else {
+    console.log('both JSON age is not same');
+}
