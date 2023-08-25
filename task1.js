@@ -7,8 +7,8 @@ Answer : In javaScript object notation we can able to store multiple values with
 
 */
 // for example 
-let obj1 = { name: "Person1", age: 5 };
-let obj2 = { age: 5, name: "Person1" };
+let obj1 = '{"name":"Person1","age":5}';
+let obj2 = '{"age":5,"name":"Person1"}';
 
 function compare(a, b) {
     let result = true;
@@ -26,4 +26,6 @@ function compare(a, b) {
     }
     return result;
 }
-console.log(compare(obj1, obj2));
+let obj_1 = JSON.parse(obj1);
+let obj_2 = JSON.parse(obj2);
+console.log(compare(obj_1, obj_2));
